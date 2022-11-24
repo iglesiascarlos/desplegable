@@ -1,0 +1,69 @@
+html{
+    font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* * Variables */
+:root{
+    /** Colores */
+    --color_verdeBase: #59d9b5;
+    --color_verdeOscuro: #01402e;
+    --color_verdeClaro: #b3f2e0;
+    --color_verdeMuyClaro: #d0f2e9;
+    --color_grisFondo: #fafcfe ;
+    /** Margenes */
+    --margenes_paddingGeneral: 30px;
+    --margenes_paddingBotones: 8px 10px;
+    --margenes_separacionSections: 80px;
+    --margenes_CurvaBoton: 20px;
+    --margenes_hamburger: 150px;
+    /** Fuentes */
+    --fuente_base: Arial;
+    --fuente_BaseTamanyo: 1rem;
+    --fuente_H1: 2rem;
+    --fuente_H2: 1.5rem;
+    --fuente_H3: 1.3rem;
+    --fuente_Botones: var(--fuente_H3);
+    --fuente_parrafos: var(--fuente_BaseTamanyo);
+}
+
+/** Escondemos checkbox y menú */
+input, .desplegable{
+    display: none;
+}
+
+.desplegable{
+    background-color: var(--color_verdeBase);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+label{
+    position: absolute;
+    top: var(--margenes_paddingGeneral);
+    left: var(--margenes_paddingGeneral);
+    z-index: 5;
+}
+
+/** Tamaños icono sbvg hamburguer  */
+svg{
+    width: 32px;
+}
+
+input:checked ~ .desplegable{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: var(--margenes_hamburger);
+    font-size: var(--fuente_H1);
+    font-family: var(--fuente_base);
+}
+
