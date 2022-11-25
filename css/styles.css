@@ -35,7 +35,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: var(--color_verdeOscuro);
+    background-color: var(--color_verdeBase);
 }
 
 /** Escondemos checkbox y menú */
@@ -44,7 +44,7 @@ input, .desplegable{
 }
 
 .desplegable{
-    background-color: var(--color_verdeBase);
+    background-color: var(--color_verdeOscuro);
     width: 100vw;
     height: 100vh;
     color: white;
@@ -84,7 +84,7 @@ input:checked ~ .desplegable{
     width: 180px;
 }
 
-.main{
+main{
     position: absolute;
     display: flex;
     align-items: center;
