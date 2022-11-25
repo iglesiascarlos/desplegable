@@ -30,6 +30,14 @@ html{
     --fuente_parrafos: var(--fuente_BaseTamanyo);
 }
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color_verdeMuyClaro);
+}
+
 /** Escondemos checkbox y menú */
 input, .desplegable{
     display: none;
@@ -67,18 +75,6 @@ input:checked ~ .desplegable{
     font-family: var(--fuente_base);
 }
 
-main{
-    background-color: var(--color_verdeMuyClaro);
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-}
-
 .svgLogo{
-    width: 200px;
+    width: 180px;
 }
