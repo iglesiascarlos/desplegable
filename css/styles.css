@@ -52,6 +52,10 @@ input, .desplegable{
     padding: 0;
 }
 
+ul > li{
+    color: var(--color_verdeBase);
+}
+
 label{
     position: absolute;
     top: var(--margenes_paddingGeneral);
