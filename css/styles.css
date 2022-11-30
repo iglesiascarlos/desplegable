@@ -112,11 +112,8 @@ h1{
 /*! APARTADO LOGIN SIGNUP */
 
 .containerLogin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
-    background-color: var(--color_verdeClaro);
+    background-color: var(--color_grisFondo);
 }
 
 .hamburguerLogin{
@@ -139,6 +136,8 @@ h3{
     color: var(--color_verdeBase);
     text-transform: uppercase;
     text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1rem;
 }
 
 .hex2{
@@ -146,9 +145,85 @@ h3{
     margin-right: 0.8rem;
 }
 
+.mainLogin{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    padding: var(--margenes_paddingGeneral);
+}
+
+.topArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .logoLogin{
     display: flex;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
+
+.subtituloSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    color: grey;
+    font-size: 0.9rem;
+}
+
+/** Botones */
+.form,form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+form > input{
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    border: none;
+    color: white;
+}
+
+.inputEmail::placeholder{
+    color: white;
+    font-size: 1rem;
+}
+
+.inputPassword::placeholder{
+    color: black;
+    font-size: 1rem;
+}
+
+.inputEmail{
+    background-color: var(--color_verdeBase);
+}
+
+.inputPassword{
+    background-color: var(--color_verdeClaro);
+}
+
+h4{
+    color: var(--color_verdeBase);
+    margin-top: 3rem;
+}
+
+.bottomArticle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
 
