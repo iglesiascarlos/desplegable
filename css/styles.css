@@ -6,6 +6,11 @@ html{
     box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
 /* * Variables */
 :root{
     /** Colores */
@@ -30,7 +35,8 @@ html{
     --fuente_parrafos: var(--fuente_BaseTamanyo);
 }
 
-body{
+
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +45,7 @@ body{
 }
 
 /** Escondemos checkbox y menú */
-input, .desplegable{
+.inputHamburguer, .desplegable{
     display: none;
 }
 
@@ -56,7 +62,7 @@ ul > li{
     color: var(--color_verdeBase);
 }
 
-label{
+.hamburguer{
     position: absolute;
     top: var(--margenes_paddingGeneral);
     left: var(--margenes_paddingGeneral);
@@ -84,10 +90,6 @@ input:checked ~ .desplegable{
     font-family: var(--fuente_base);
 }
 
-.svgLogo{
-    width: 180px;
-}
-
 .mainLogo{
     position: absolute;
     display: flex;
@@ -110,17 +112,43 @@ h1{
 /*! APARTADO LOGIN SIGNUP */
 
 .containerLogin{
-    background-color: var(--color_grisFondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--color_verdeClaro);
 }
 
-.mainLogin{
+.hamburguerLogin{
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    top: var(--margenes_paddingGeneral);
+    left: var(--margenes_paddingGeneral);
+    z-index: 5;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: black;
+}
+
+h3{
+    color: var(--color_verdeBase);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.hex2{
+    width: 2.8rem;
+    margin-right: 0.8rem;
 }
 
 .logoLogin{
     display: flex;
     align-items: center;
+    justify-items: center;
 }
+
